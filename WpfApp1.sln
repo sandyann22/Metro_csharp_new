@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{B59F8882-A82F-4A60-8300-8D4512BCCF03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport", "Transport\Transport.csproj", "{5456BF33-B3BC-42B2-B78C-5987BDCDFECC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{03B055AB-BD2B-4D1C-8F36-7728621529BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B59F8882-A82F-4A60-8300-8D4512BCCF03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59F8882-A82F-4A60-8300-8D4512BCCF03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59F8882-A82F-4A60-8300-8D4512BCCF03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59F8882-A82F-4A60-8300-8D4512BCCF03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5456BF33-B3BC-42B2-B78C-5987BDCDFECC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5456BF33-B3BC-42B2-B78C-5987BDCDFECC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5456BF33-B3BC-42B2-B78C-5987BDCDFECC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5456BF33-B3BC-42B2-B78C-5987BDCDFECC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B055AB-BD2B-4D1C-8F36-7728621529BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B055AB-BD2B-4D1C-8F36-7728621529BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B055AB-BD2B-4D1C-8F36-7728621529BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B055AB-BD2B-4D1C-8F36-7728621529BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F26F02B-39C7-41E0-85F3-4F90A2483F94}
+	EndGlobalSection
+EndGlobal
