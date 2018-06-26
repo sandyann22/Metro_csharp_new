@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Maps.MapControl.WPF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,10 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+
         }
+
+        public ResourceDictionaryLocation Location { get; private set; }
         private String Xvalide { get; set; }//Longitude
         private String Yvalide { get; set; }//Latitude
         private String Zvalide { get; set; }//distance
@@ -33,6 +37,7 @@ namespace WpfApp1
         private void Button_Click(object sender, RoutedEventArgs e)
 
         {
+            carte.Children.Clear();
             Xvalide = lon.Text;
             Yvalide = lat.Text;
             Zvalide = dist.Text;
@@ -46,17 +51,19 @@ namespace WpfApp1
                 List<StructureJson> ArretSansDouble = donnees.GroupBy(n => n.Name).Select(grp => grp.First()).ToList();
 
 
-                /* itération ligne par ligne pour récupérer infos dans Lines
-                * soit lines soit lineSansDoublons
-                */
-
-               // Result.ItemsSource = ArretSansDouble;
+                
 
                 foreach (StructureJson donnee in ArretSansDouble)
                 {
                     /*pour chaque élement de la structureJson dans données on récupère 
                     dans la variable donnee, id, nom... et on affiche*/
+                   
+                    Pushpin Ici = new Pushpin();
+                    Location location = new Location(donnee.Lat, donnee.Lon );
+                    Ici.Location = location;
+                    carte.Children.Add(Ici);
                     Result.Items.Add(donnee.Name);
+
 
                     //Console.WriteLine("\nArrêt" + " " + donnee.Name
 
